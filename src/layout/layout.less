@@ -1,0 +1,38 @@
+.layout {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.header {
+    border: 1px solid green;
+    grid-area: 1 / 1 / 1 / 7;
+}
+
+.navbar {
+    border: 1px solid blue;
+    grid-area: 2 / 1 / 6 / 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar a {
+    padding: 10 0;
+    display: flex;
+    align-self: center;
+}
+
+.content {
+    border: 1px solid orange;
+    grid-area: 2 / 2 / 6 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    border: 1px solid purple;
+    grid-area: 6 / 1 / 6 / 7;
+}
